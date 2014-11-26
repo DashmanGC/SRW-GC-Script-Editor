@@ -42,13 +42,13 @@ Next to the Speaker in the Edit area, you see "Use alternative text for female".
 
 Why is this necessary? Sometimes people talk about the MC, and Japanese can be rather genderless at times. If you find that a line speaks of the MC and you need to use a he / she, Mr. / Miss, his / her and so on, check this option.
 
-Notice the Check buttons under the text areas? When you click on them, it tells you the maximum width in pixels that your text has. The max width for a dialogue seems to be 324 pixels, which is 18 or 19 characters with the game's normal font.
+Notice the Check buttons under the text areas? When you click on them, it tells you the maximum width in pixels that your text has. The max width for a dialogue seems to be 324 pixels, which is 18 or 19 characters with the game's normal font. UPDATE: These buttons no longer exist.
 
-The option "Use VWF to calculate width" is related to the previous one, but is not available yet. Once VWF font is implemented in the game, this option will let you check the width using the VWF's width values (you'll be able to write wider lines).
+The option "Use VWF to calculate width" is related to the previous one, but is not available yet. Once VWF font is implemented in the game, this option will let you check the width using the VWF's width values (you'll be able to write wider lines). UPDATE: This option is now enabled by default.
 
 "Number of lines per dialogue" lets you specify how many lines in your edited text will be considered a new dialogue. What this means is you can EXPAND any dialogue. If you write 4 lines in a dialogue and the number of lines is set to 3, when you save the file that dialogue will be stored as 2 dialogues (one with 3 lines and another one with 1). If you write 7 you'll get 3 dialogues, and so on. NOTE: If you expand a dialogue with Voice, the Voice command won't be present in the expanded dialogues (just the first one). The Remote property is inherited by all the expanded dialogues.
 
-Why the option to choose between 3 and 4? Well, 3 lines gives very little space to write. As it is now, the game only displays 3 lines, but there might come a time in which it becomes hacked to display 4. When that happens, set it to 4.
+Why the option to choose between 3 and 4? Well, 3 lines gives very little space to write. As it is now, the game only displays 3 lines, but there might come a time in which it becomes hacked to display 4. When that happens, set it to 4. UPDATE: We have means to use 4 lines now, so the default value is 4.
 
 If you disable "Convert keystrokes to SJIS", you'll write normal ASCII characters. The game actually recognizes ASCII characters (as long as you write an even number of them) and has a smaller font for them. The problem with this is that some pairs of ASCII characters are actually codes that the game uses for different effects. For a list of the ones we know, either press F1 or go to ? -> Help.
 
