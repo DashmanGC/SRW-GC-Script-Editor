@@ -438,7 +438,9 @@ public class Dialogue {
             else if (name.equals("ジン"))
                 return "Ｊｉｎ";
             else if (name.equals("ドルチェノフ"))
-                return "Ｄｏｒｃｈｅｎｏｖ";
+                return "Ｔｕｒｃｈｉｎｏｖ";
+            else if (name.equals("Ｄｏｒｃｈｅｎｏｖ"))
+                return "Ｔｕｒｃｈｉｎｏｖ";
             else if (name.equals("ギルトール"))
                 return "Ｇｕｉｌｔｏｒｒｅ";
 

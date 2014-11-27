@@ -139,7 +139,7 @@ public class UserInterfaceSE extends javax.swing.JFrame {
         menuitemHelp = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("SRW GC Script Editor v1.2 by Dashman");
+        setTitle("SRW GC Script Editor v1.2a by Dashman");
         setResizable(false);
 
         panelNavigation.setBorder(javax.swing.BorderFactory.createTitledBorder("Navigation"));
