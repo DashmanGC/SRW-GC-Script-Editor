@@ -97,7 +97,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="title" type="java.lang.String" value="SRW GC Script Editor v1.2a by Dashman"/>
+    <Property name="title" type="java.lang.String" value="SRW GC Script Editor v1.2b by Dashman"/>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
