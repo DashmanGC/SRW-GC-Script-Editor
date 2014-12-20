@@ -397,7 +397,7 @@ public class Dialogue {
             else if (name.equals("ボーン"))
                 return "Ｂｏｈｎ";
             else if (name.equals("ゲティ"))
-                return "Ｇｅｔｔｙ";
+                return "Ｇｅｔｙ";
             else if (name.equals("グレスコ"))
                 return "Ｇｒｅｓｃｏ";
             else if (name.equals("ゲイル"))
@@ -463,7 +463,7 @@ public class Dialogue {
             else if (name.equals("オンドロン"))
                 return "Ｏｎｄｏｒｏｎ";
             else if (name.equals("ジルバ"))
-                return "Ｓｉｌｖａ";
+                return "Ｊｉｌｖａ";
 
             else if (name.equals("ミト"))
                 return "Ｍｉｔｏ";
@@ -476,13 +476,13 @@ public class Dialogue {
             else if (name.equals("バルジャン"))
                 return "Ｂａｌｊａｎ";
             else if (name.equals("トクガー王"))
-                return "Ｋｉｎｇ　Ｔｏｋｇｅｒ";
+                return "Ｋｉｎｇ　Ｔｏｋｕｇａ";
             else if (name.equals("トクガー王妃"))
-                return "Ｑｕｅｅｎ　Ｔｏｋｇｅｒ";
+                return "Ｑｕｅｅｎ　Ｔｏｋｕｇａ";
             else if (name.equals("デスバン"))
                 return "Ｄｅｓｂａｎ";
             else if (name.equals("バードランド領主"))
-                return "Ｌｏｒｄ　Ｂａｒｄｌａｎｄ";
+                return "Ｂａｒｄｌａｎｄ　Ｌｏｒｄ";
             else if (name.equals("ルビタイ"))
                 return "Ｒｕｂｉｔａｉ";
             else if (name.equals("アニタ"))
@@ -617,8 +617,10 @@ public class Dialogue {
                 return "Ａｒｌｅ";
             else if (name.equals("ガスコン"))
                 return "Ｇａｓｃｏｎ";
+            else if (name.equals("偽ガスコン"))
+                return "Ｆａｋｅ　Ｇａｓｃｏｎ";
             else if (name.equals("ドルメン"))
-                return "Ｄｏｌｍｅｎ";
+                return "Ｄｏｒｍｅｎ";
             else if (name.equals("クロッペン"))
                 return "Ｋｌｏｐｐｅｎ";
             else if (name.equals("カブト将軍"))

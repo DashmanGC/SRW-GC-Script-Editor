@@ -47,7 +47,7 @@ public class UserInterfaceSE extends javax.swing.JFrame {
     int current_dialogue = 0;
     String lastDirectory = ".";
     boolean file_loaded = false;
-    String title = "SRW GC Script Editor v1.2 by Dashman";
+    String title = "SRW GC Script Editor v1.3 by Dashman";
     String current_file = "";
     
     String font_encoding = "MS932";
@@ -132,6 +132,11 @@ public class UserInterfaceSE extends javax.swing.JFrame {
         menuitemSave = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JSeparator();
         menuitemExit = new javax.swing.JMenuItem();
+        menuNavigate = new javax.swing.JMenu();
+        menuitemPrevious = new javax.swing.JMenuItem();
+        menuitemNext = new javax.swing.JMenuItem();
+        menuitemFirst = new javax.swing.JMenuItem();
+        menuitemLast = new javax.swing.JMenuItem();
         menuTools = new javax.swing.JMenu();
         menuitemConvertL = new javax.swing.JMenuItem();
         menuitemConvertR = new javax.swing.JMenuItem();
@@ -139,7 +144,7 @@ public class UserInterfaceSE extends javax.swing.JFrame {
         menuitemHelp = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("SRW GC Script Editor v1.2b by Dashman");
+        setTitle("SRW GC Script Editor v1.3 by Dashman");
         setResizable(false);
 
         panelNavigation.setBorder(javax.swing.BorderFactory.createTitledBorder("Navigation"));
@@ -549,6 +554,46 @@ public class UserInterfaceSE extends javax.swing.JFrame {
 
         menubar.add(menuFile);
 
+        menuNavigate.setText("Navigate");
+
+        menuitemPrevious.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_PAGE_UP, 0));
+        menuitemPrevious.setText("Previous");
+        menuitemPrevious.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuitemPreviousActionPerformed(evt);
+            }
+        });
+        menuNavigate.add(menuitemPrevious);
+
+        menuitemNext.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_PAGE_DOWN, 0));
+        menuitemNext.setText("Next");
+        menuitemNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuitemNextActionPerformed(evt);
+            }
+        });
+        menuNavigate.add(menuitemNext);
+
+        menuitemFirst.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_HOME, java.awt.event.InputEvent.CTRL_MASK));
+        menuitemFirst.setText("First");
+        menuitemFirst.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuitemFirstActionPerformed(evt);
+            }
+        });
+        menuNavigate.add(menuitemFirst);
+
+        menuitemLast.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_END, java.awt.event.InputEvent.CTRL_MASK));
+        menuitemLast.setText("Last");
+        menuitemLast.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuitemLastActionPerformed(evt);
+            }
+        });
+        menuNavigate.add(menuitemLast);
+
+        menubar.add(menuNavigate);
+
         menuTools.setText("Tools");
 
         menuitemConvertL.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
@@ -783,6 +828,29 @@ public class UserInterfaceSE extends javax.swing.JFrame {
                 "       the character is shown through some sort of communicator.\n",
                 "Help", JOptionPane.PLAIN_MESSAGE);
     }//GEN-LAST:event_menuitemHelpActionPerformed
+
+    private void menuitemPreviousActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuitemPreviousActionPerformed
+        // TODO add your handling code here:
+        if (buttonPrevious.isEnabled())
+        buttonPrevious.doClick();
+    }//GEN-LAST:event_menuitemPreviousActionPerformed
+
+    private void menuitemNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuitemNextActionPerformed
+        // TODO add your handling code here:
+        if (buttonNext.isEnabled())
+        buttonNext.doClick();
+    }//GEN-LAST:event_menuitemNextActionPerformed
+
+    private void menuitemFirstActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuitemFirstActionPerformed
+        // TODO add your handling code here:
+        jumpTo(0);
+    }//GEN-LAST:event_menuitemFirstActionPerformed
+
+    private void menuitemLastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuitemLastActionPerformed
+        // TODO add your handling code here:
+        if (!script.isEmpty())
+        jumpTo(script.size());
+    }//GEN-LAST:event_menuitemLastActionPerformed
 
 
 
@@ -1851,13 +1919,18 @@ public class UserInterfaceSE extends javax.swing.JFrame {
     private javax.swing.JLabel labelWidthUsedRight;
     private javax.swing.JMenu menuFile;
     private javax.swing.JMenu menuHelp;
+    private javax.swing.JMenu menuNavigate;
     private javax.swing.JMenu menuTools;
     private javax.swing.JMenuBar menubar;
     private javax.swing.JMenuItem menuitemConvertL;
     private javax.swing.JMenuItem menuitemConvertR;
     private javax.swing.JMenuItem menuitemExit;
+    private javax.swing.JMenuItem menuitemFirst;
     private javax.swing.JMenuItem menuitemHelp;
+    private javax.swing.JMenuItem menuitemLast;
+    private javax.swing.JMenuItem menuitemNext;
     private javax.swing.JMenuItem menuitemOpen;
+    private javax.swing.JMenuItem menuitemPrevious;
     private javax.swing.JMenuItem menuitemSave;
     private javax.swing.JPanel panelEdit;
     private javax.swing.JPanel panelNavigation;
